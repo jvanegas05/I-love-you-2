@@ -1,0 +1,32 @@
+namespace iloveyou
+{
+
+     class Program
+     {
+         static void Main(string[] args)
+         {
+             for (int i = 0; i < length; i++)
+             {
+                     Console.Writeline();
+             }
+             string frase = "Eres lo mejor de este mundo";
+             var array = frase.Split(" ");
+             foreach (var item in array)
+             {
+                 Console.Write("               ");
+                 char[] arr;
+                 arr = item.ToCharArray();
+                 foreach (var item2 in arr)
+                 {
+                     Console.Write(item2);
+                     Thread.Sleep(300);
+                 }
+                 Console.Writeline();
+             }
+             Console.Write("              ")
+             Console.ReadKey();
+         }
+         
+     }
+    
+}
